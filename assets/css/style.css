@@ -115,6 +115,49 @@ header h1 {
   border-right: 2px solid;
   flex-basis: 25%;
 }
+.portfolio-section {
+  border: 3px solid green;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+  "project1 project1"
+  "project1 project1"
+  "project2 project3"
+  "project4 project5";
+}
+
+.project-1 {
+  grid-area: project1;
+  border: 1px solid black;
+}
+.project-2 {
+  grid-area: project2;
+  border: 1px solid black;
+}
+.project-3 {
+  grid-area: project3;
+  border: 1px solid black;
+}
+.project-4 {
+  grid-area: project4;
+  border: 1px solid black;
+}
+.project-5 {
+  grid-area: project5;
+  border: 1px solid black;
+}
+h3 {
+  height: 40px;
+  width: 100%;
+}
+.project img {
+  width: 100%;
+  height: 1fr;
+}
+.project-1 img {
+  height: 2fr;
+}
 @media (max-width:500px){
   .about-me {
     flex-direction: column;
