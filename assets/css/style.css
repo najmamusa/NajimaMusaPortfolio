@@ -1,110 +1,24 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+html {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 body {
-  margin: 0;
-  padding: 0;
-  font-family:'Quicksand', sans-serif;
-  line-height: 1.5;
-  scroll-behavior: smooth;
-  box-sizing: border-box;
-  max-width: 1440px;
-}
-nav {
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 75px;
   width: 100%;
-  background: #E6D6D2;
+  background-color: #E6D6D2
 }
-nav .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-  width: 90%;
-  background: #E6D6D2;
-  margin: auto;
-}
-nav .navbar .logo a{
-color: #DA7298;
-font-size: 16px;
-font-weight: 600;
-text-decoration: none;
-}
-nav .navbar .menu {
-  display: flex;
-  list-style-type: none;
-}
-li {
-  margin-right: 5px;
-}
-.navbar.menu li {
-  list-style: none;
-  margin: 0 15px;
-}
-.navbar .menu li a{
-  color: #DA7298;
-  font-size: 17px;
-  font-weight: 500;
-  text-decoration: none;
-}
-section{
-  /* height: 100vh; */
-  width: 100%;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  color: #da7298;
-  font-size: 16px;
-}
-#about{
-  background: #E6D6D2;
-}
-#work{
-  background:#E6D6D2;
-}
-#CV{
-  background:#E6D6D2;
-}
-#contact{
-  background:#E6D6D2;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
-
+/* header */
 header {
-  background-color: #E6D6D2;
-  width: 100%;
-  height: 5vh;
+  width: 100%
 }
-
-header h1 {
-  margin-left: 3%;
-
+.nav {
+  align-items: center;
 }
-.top-nav ul{
-  display: flex;
-  /* flex-wrap: wrap; */
-  gap: 2rem;
-  list-style: none;
-}
-
-.top-nav a {
-  text-decoration: none;
-}
-
+/* hero */
 .hero-banner {
   background-image: url("./images/02-hero-bg.jpg");
   background-size: cover;
@@ -117,70 +31,92 @@ header h1 {
   margin-right: 50px;
   margin-top: 60px;
 }
+/* page wrapper */
+.section-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+/* about me */
 .about-me {
-  display: flex;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 200px 1fr;
 }
-.about-me h2 {
+.about-me-header {
   border-right: 2px solid;
-  flex-basis: 25%;
+  margin-top: 9px;
+  margin-right: 10px;
 }
-.projects-container {
-  display: flex;
+/* portfolio */
+.portfolio-section {
+  /* width: 100%; */
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
 }
 .portfolio-section-header {
   border-right: 2px solid;
-  flex-basis: 25%;
+  margin-top: 9px;
+  margin-right: 10px;
 }
-.portfolio-section {
-  border: 3px solid green;
+.projects-container {
   display: grid;
+  gap: 20px;
+  padding: 20px;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: 200px 200px 200px 200px;
   grid-template-areas:
   "project1 project1"
   "project1 project1"
   "project2 project3"
   "project4 project5";
 }
-
+.project {
+  border: solid;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.4s
+}
+.project:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
 .project-1 {
   grid-area: project1;
-  border: 1px solid black;
-  background-image: url("./images/02-portfolio-4.jpg");
+  background-image: url("./images/02-portfolio-4.jpg")
 }
 .project-2 {
   grid-area: project2;
-  border: 1px solid black;
+  background-image: url("./images/02-portfolio-1.jpg");
 }
 .project-3 {
   grid-area: project3;
-  border: 1px solid black;
+  background-image: url("./images/02-portfolio-2.jpg");
 }
 .project-4 {
   grid-area: project4;
-  border: 1px solid black;
+  background-image: url("./images/02-portfolio-3.jpg");
 }
 .project-5 {
   grid-area: project5;
-  border: 1px solid black;
+  background-image: url("./images/02-run-buddy.jpg");
 }
-h3 {
-  height: 40px;
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.project-details {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.cv-section {
   width: 100%;
-}
-.project img {
-  width: 100%;
-  height: 1fr;
-}
-.project-1 img {
-  height: 2fr;
-}
-@media (max-width:500px){
-  .about-me {
-    flex-direction: column;
-  }
-  .about-me h2 {
-    border: none;
-    border-bottom: 2px solid;
-  }
+  display: grid;
+  grid-template-columns: 200px 1fr;
 }
