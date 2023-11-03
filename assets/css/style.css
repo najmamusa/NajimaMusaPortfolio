@@ -1,7 +1,8 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0
+  padding: 0;
+  scroll-behavior: smooth;
 }
 html {
   max-width: 1440px;
@@ -15,13 +16,48 @@ body {
 header {
   width: 100%
 }
-.nav {
+nav{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 75px;
+  width: 100%;
+  background:#E6D6D2;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+nav .navbar{
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 90%;
+  background:#E6D6D2;
+  margin: auto;
+}
+nav .navbar .logo a{
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+nav .navbar .menu{
+  display: flex;
+}
+.navbar .menu li{
+  list-style: none;
+  margin: 0 15px;
+}
+.navbar .menu li a{
+  color: black;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
 }
 /* hero */
 .hero-banner {
-  background-image: url("./images/02-hero-bg.jpg");
-  background-size: cover;
+  background-image: url("./images/E3A2EA83-3DB1-4B40-BC5F-8368EE5751B1.PNG");
+  background-size: contain;
+  background-repeat: no-repeat;
   height: 300px;
   display: flex;
   justify-content: flex-end;
