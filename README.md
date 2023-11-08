@@ -1,8 +1,8 @@
-#Personal Portfolio Website
+# Personal Portfolio Website
 
 Welcome to my personal portfolio website! This website is designed to showcase my skills, experience, and projects to potential employers. It provides an easy-to-navigate platform to explore my journey as a software developer.
 
-##Getting Started
+## Getting Started
 To run this website on your local machine, follow these steps:
 
 Clone the repository to your local machine:
@@ -17,7 +17,7 @@ Copy code
 cd portfolio-website
 Open the index.html file in your preferred web browser to view the website.
 
-##Contents
+## Contents
 This website is divided into several sections:
 
 About: Details about my educational background, professional experience, and personal skills.
@@ -26,14 +26,14 @@ Projects: A showcase of my most significant projects, including images, descript
 
 Contact: Information about how to get in touch with me, including an email form and social media icons.
 
-##Technologies Used
+## Technologies Used
 HTML: For the structure of the website.
 CSS: For the styling and responsiveness of the website.
 
-##Contributing
+## Contributing
 Feel free to fork this repository and submit a pull request with any proposed changes. Alternatively, you can reach out to me via the contact information provided on the website to discuss any ideas or potential collaborations.
 
-##License
+## License
 MIT License.
 
 ---
